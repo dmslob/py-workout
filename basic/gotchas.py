@@ -6,6 +6,7 @@ def append_to(element, to=[]):
     to.append(element)
     return to
 
+
 my_list = append_to(12)
 print(my_list)
 
@@ -15,14 +16,18 @@ print(my_other_list)
 
 def create_multipliers():
     return [lambda x: i * x for i in range(5)]
+
+
 # same
 def create_multipliers1():
     multipliers = []
     for i in range(5):
         def multiplier(x):
             return i * x
+
         multipliers.append(multiplier)
     return multipliers
+
 
 for multiplier in create_multipliers():
     print(multiplier(2))
@@ -31,6 +36,6 @@ for multiplier in create_multipliers():
 def create_multipliers():
     return [lambda x, i=i: i * x for i in range(5)]
 
+
 for multiplier in create_multipliers():
     print(multiplier(2))
-

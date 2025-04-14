@@ -1,7 +1,7 @@
 string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'
 # short-circuit operator
-non_null = string1 or string2 or string3
-print(non_null)
+non_empty = string1 or string2 or string3
+print(non_empty)
 
 print((1, 2, 3) < (1, 2, 4))
 print([1, 2, 3] < [1, 2, 4])

@@ -1,6 +1,6 @@
 vec = [-4, -2, 0, 2, 4]
 # create a new list with the values doubled
-doubled = [x*2 for x in vec]
+doubled = [x * 2 for x in vec]
 print(doubled)
 
 # filter the list to exclude negative numbers
@@ -17,11 +17,11 @@ stripped = [weapon.strip() for weapon in freshfruit]
 print(stripped)
 
 # create a list of 2-tuples like (number, square)
-tuples = [(x, x**2) for x in range(6)]
+tuples = [(x, x ** 2) for x in range(6)]
 print(tuples)
 
 # flatten a list using a listcomp with two 'for'
-vec = [[1,2,3], [4,5,6], [7,8,9]]
+vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 listcomp = [num for elem in vec for num in elem]
 print(listcomp)
 
