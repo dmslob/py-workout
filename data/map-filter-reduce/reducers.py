@@ -22,6 +22,6 @@ filter_result = list(filter(lambda name: len(name) <= 7, my_names))
 # Use reduce to print the product of these numbers
 reduce_result = reduce(lambda num1, num2: num1 * num2, my_numbers)
 
-print(map_result)   # [18.922, 37.088, 10.562, 95.453, 4.666, 78.854, 21.068]
-print(filter_result)    # ['olumide', 'josiah', 'omoseun']
-print(reduce_result)    # 24840
+print(map_result)  # [18.922, 37.088, 10.562, 95.453, 4.666, 78.854, 21.068]
+print(filter_result)  # ['olumide', 'josiah', 'omoseun']
+print(reduce_result)  # 24840
