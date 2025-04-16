@@ -1,3 +1,6 @@
+import unittest
+
+
 def find_number(matrix, k):
     if not matrix or not matrix[0]:
         return False
@@ -14,7 +17,19 @@ def find_number(matrix, k):
     return False
 
 
-A = [[1, 2, 3], [4, 5, 6]]
-kk = 5
-number_found = find_number(A, kk)
-print(f'Number {kk} is found={number_found}')
+class TestFindNumberFunction(unittest.TestCase):
+
+    def test_find_number(self):
+        # given
+        A = [[1, 2, 3], [4, 5, 6]]
+        kk = 5
+        expected = 'Number 5 is found=True'
+        # when
+        number_found = find_number(A, kk)
+        log = f'Number {kk} is found={number_found}'
+        # then
+        self.assertEqual(log, expected)
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,4 +1,3 @@
-import doctest
 import unittest
 
 
@@ -8,9 +7,6 @@ def average(values):
     40.0
     """
     return sum(values) / len(values)
-
-# automatically validate the embedded tests
-print(doctest.testmod())
 
 
 class TestStatisticalFunctions(unittest.TestCase):
@@ -23,5 +19,9 @@ class TestStatisticalFunctions(unittest.TestCase):
         with self.assertRaises(TypeError):
             average(20, 30, 70)
 
+
 # Calling from the command line invokes all tests
-print(unittest.main())
+# unittest.main()
+
+if __name__ == '__main__':
+    unittest.main()
