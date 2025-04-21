@@ -1,4 +1,10 @@
+
 def transpose_matrix(mx: list[list[int | float]]) -> list[list[int | float]]:
+    """
+    The transpose of a matrix is obtained by flipping rows and columns.
+    :param mx: matrix
+    :return: transposed matrix
+    """
     if not mx:
         return []
     # Check if all rows have the same number of columns

@@ -1,7 +1,10 @@
+
 def matrix_dot_vector(matrix: list[list[int | float]], vector: list[int | float]) -> list[int | float]:
-    # Matrix-Vector Dot Product
-    # Return a list where each element is the dot product of a row of 'matrix' with 'vector'.
-    # If the number of columns in 'matrix' does not match the length of 'vector', return -1.
+    """
+    Matrix-Vector Dot Product
+    Return a list where each element is the dot product of a row of 'matrix' with 'vector'.
+    If the number of columns in 'matrix' does not match the length of 'vector', return -1.
+    """
     # Check dimensions
     num_cols = len(matrix[0]) if matrix else 0
     if num_cols != len(vector):
