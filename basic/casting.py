@@ -8,7 +8,7 @@ d = str(a)
 print(d)
 print(type(d))
 
-s = '23'
-a = int(s)
+s = '0b10011'
+a = int(s, 2)
 print(a)
 

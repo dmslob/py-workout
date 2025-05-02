@@ -15,15 +15,15 @@ def diagonal_sum(mat: list[list[int]]) -> int:
 m1 = [[1, 2, 3],
       [4, 5, 6],
       [7, 8, 9]]
-print(diagonal_sum(m1))
+print(diagonal_sum(m1))  # 25
 
 m2 = [[1, 1, 1, 1],
       [1, 1, 1, 1],
       [1, 1, 1, 1],
       [1, 1, 1, 1]]
-print(diagonal_sum(m2))
+print(diagonal_sum(m2))  # 8
 
 m3 = [[5]]
-print(diagonal_sum(m3))
+print(diagonal_sum(m3))  # 5
 
 
