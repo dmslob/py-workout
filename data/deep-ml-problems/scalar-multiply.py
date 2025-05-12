@@ -1,3 +1,5 @@
+# Function that multiplies a matrix by a scalar and returns the result.
+
 def scalar_multiply(matrix: list[list[int | float]], scalar: int | float) -> list[list[int | float]]:
     """
     Multiplies a matrix by a scalar.

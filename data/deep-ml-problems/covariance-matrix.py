@@ -1,4 +1,8 @@
 import numpy as np
+# Function to calculate the covariance matrix for a given set of vectors.
+# The function should take a list of lists, where each inner list
+# represents a feature with its observations,
+# and return a covariance matrix as a list of lists.
 
 
 def covariance_matrix_numpy(data: list[list[float]]) -> list[list[float]]:

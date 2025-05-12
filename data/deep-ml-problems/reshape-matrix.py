@@ -1,4 +1,6 @@
 import numpy as np
+# Function that reshapes a given matrix into a specified shape.
+# if it cant be reshaped return back an empty list []
 
 
 def reshape_matrix(matrix: list[list[int | float]], new_shape: tuple[int, int]) -> list[list[int | float]]:

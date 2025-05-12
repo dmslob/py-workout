@@ -1,3 +1,4 @@
+# Function that computes the transpose of a given matrix.
 
 def transpose_matrix(mx: list[list[int | float]]) -> list[list[int | float]]:
     """
