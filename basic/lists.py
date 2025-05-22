@@ -101,3 +101,8 @@ result = map(lambda x: 0 if x == 'Paid' else 1, sts)
 print(list(result))
 
 print(max([1.90, 2.89]))
+
+new_list = []
+old_list = [1, 2, 3]
+new_list.append(old_list[:])
+print(new_list)
