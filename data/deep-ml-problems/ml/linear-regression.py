@@ -1,6 +1,6 @@
 import numpy as np
 
-
+# https://www.deep-ml.com/problems/14
 # Function that performs linear regression using the normal equation.
 # The function should take a matrix X (features) and a vector y (target) as input,
 # and return the coefficients of the linear regression model.
@@ -39,6 +39,7 @@ y1 = [1, 2, 1]
 print("Coefficients:", linear_regression_normal_equation(X1, y1))
 
 
+# https://www.deep-ml.com/problems/15
 # Function that performs linear regression using gradient descent.
 # The function should take NumPy arrays X (features with a column of ones for the intercept)
 # and y (target) as input, along with learning rate alpha and the number of iterations,
@@ -63,6 +64,7 @@ def linear_regression_gradient_descent(X: np.ndarray, y: np.ndarray, alpha: floa
         gradient = (1 / m) * X.T.dot(X.dot(theta) - y)
         theta -= alpha * gradient
     return np.round(theta.flatten(), 4)  # Flatten to 1D array and round
+
 
 # Test
 X = np.array([[1, 1], [1, 2], [1, 3]])
