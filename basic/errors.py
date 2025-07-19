@@ -1,5 +1,3 @@
-import sys
-
 x = 45
 
 

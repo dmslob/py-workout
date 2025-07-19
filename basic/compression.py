@@ -1,20 +1,11 @@
 import zlib
-from timeit import Timer
 
-s = b'witch which has which witches wrist watch'
-print(len(s))
+phrase = b'witch which has which witches wrist watch'
+phrase_len = len(phrase)
+print(f'Phrase length: {phrase_len}')
 
-t = zlib.compress(s)
-print(len(t))
+compressed_phrase = zlib.compress(phrase)
 
-print(zlib.decompress(t))
-
-print(zlib.crc32(s))
-
-# Performance Measurement
-print(Timer('t=a; a=b; b=t', 'a=1; b=2').timeit())
-print(Timer('a,b = b,a', 'a=1; b=2').timeit())
-# In contrast to timeit’s fine level of granularity,
-# the profile and pstats modules provide tools for identifying time
-# critical sections in larger blocks of code.
-
+print(f'Compressed phrase: {len(compressed_phrase)}')
+print(f'Decompressed phrase: {zlib.decompress(compressed_phrase)}')
+print(f'CRC-32 checksum of phrase: {zlib.crc32(phrase)}')

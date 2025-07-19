@@ -23,7 +23,7 @@ for w in words:
     print(w, len(w))
 
 # Create a sample collection
-users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
+users = {'Hans': 'active', 'Eleonore': 'inactive', 'Mark': 'active'}
 # Strategy:  Iterate over a copy
 for user, status in users.copy().items():
     if status == 'inactive':
