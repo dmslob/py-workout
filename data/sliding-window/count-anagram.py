@@ -1,5 +1,11 @@
 # Sliding Window Algorithm
 # https://builtin.com/data-science/sliding-window-algorithm
+# Types of Sliding Window:
+# Fixed-size window: The window always contains a constant number of elements
+# (e.g., finding the maximum sum of all sub-arrays of size k).
+# Variable-size window: The window size grows or shrinks dynamically based on
+# certain conditions (e.g., finding the longest substring with unique characters).
+#
 # COUNT OCCURRENCES OF ANAGRAM
 # Given a word and a text, return the count of occurrences
 # of the anagrams of the word in the text.

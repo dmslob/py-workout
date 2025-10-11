@@ -1,7 +1,3 @@
-# one line comment
-""" Multi line
-    comment
-"""
 import sys
 
 words = ['one', 'two']
