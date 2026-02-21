@@ -36,3 +36,19 @@ print(f"sigmoid(2) = {sigmoid(2)}")
 print(f"sigmoid(-1) = {sigmoid(-1)}")
 print(f"sigmoid(10) = {sigmoid(10)}")
 print(f"sigmoid(-10) = {sigmoid(-10)}")
+
+
+def sigmoid_v2(x):
+    # Defining Euler's constant (e)
+    e = 2.718281828459045
+    o = 1 / (1 + e**-x)
+    return round(o, 4)
+
+
+# Testing the function
+inputs = [-2, 0, 2]
+for val in inputs:
+    print(f"Input: {val} => Sigmoid: {sigmoid(val)}")
+
+for val in inputs:
+    print(f"Input: {val} => Sigmoid: {sigmoid_v2(val)}")
