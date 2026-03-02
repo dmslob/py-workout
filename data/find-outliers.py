@@ -3,12 +3,10 @@ import numpy as np
 
 def find_outliers(data):
     sorted_data = sorted(data)
-
     q1 = np.percentile(sorted_data, 25)
     q3 = np.percentile(sorted_data, 75)
-
+    # inter-quartile range
     iqr = q3 - q1
-
     lower_bound = q1 - 1.5 * iqr
     upper_bound = q3 + 1.5 * iqr
 
