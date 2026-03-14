@@ -1,7 +1,12 @@
 from collections import Counter
 from scipy import stats
 
-
+# The mode is the value that appears most often in a set of data.
+# If there are multiple values that appear with the same highest frequency,
+# all of those values are considered modes.
+# Example: In the data set [1, 2, 2, 3, 4],
+# the mode is 2 because it appears twice,
+# while all other numbers appear only once.
 def find_mode(nums):
     modes = []
     mode_dict = {}
