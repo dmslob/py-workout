@@ -1,5 +1,10 @@
-import numpy
+# Sometimes, mean does not adequately represent the "typical" value for data.
+# For example, when there are a few extreme values that are completely out of range,
+# they can affect the mean.
+# Another good indication is a median, a value such that half of data points
+# are lower than it, and another half - higher
 
+import numpy
 
 def median(nums):
     n = len(nums)
