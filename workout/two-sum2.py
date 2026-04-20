@@ -29,10 +29,10 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     left = 0
     right = n - 1
     while left < right:
-        summ = nums[left] + nums[right]
-        if summ == target:
-            return [left + 1, right + 1]
-        elif summ < target:
+        s = nums[left] + nums[right]
+        if s == target:
+            return [left, right]
+        elif s < target:
             left += 1
         else:
             right -= 1

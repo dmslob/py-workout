@@ -12,5 +12,6 @@ def find_two_sum(nums: List[int], target: int) -> List[int]:
         prev_map[n] = i
     return []
 
-numbers = [2,7,11,15]
+
+numbers = [2, 7, 11, 15]
 print(find_two_sum(numbers, 9))
