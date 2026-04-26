@@ -74,7 +74,8 @@ for i, v in enumerate(ls):
 # the entries can be paired with the zip() function
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
-for q, a in zip(questions, answers):
+pairs = zip(questions, answers)
+for q, a in pairs:
     print('What is your {0}?  It is {1}.'.format(q, a))
 
 # To loop over a sequence in reverse

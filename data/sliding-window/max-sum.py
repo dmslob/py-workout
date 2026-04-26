@@ -19,6 +19,19 @@ def find_max_sum(arr, k):
 numbers = [3, 5, 2, 1, 7]
 print(find_max_sum(numbers, 2))
 
+def subarray_sum_on(nums, k):
+    answer = 0
+    subarray_sum = 0
+    prefix_sum_count = {0: 1}
+    for i in range(len(nums)):
+        subarray_sum += nums[i]
+        to_remove = subarray_sum - k
+        answer += prefix_sum_count.get(to_remove, 0)
+        prev_count = prefix_sum_count.get(subarray_sum, 0)
+        prefix_sum_count[subarray_sum] = prev_count + 1
+    return answer
+
+print(subarray_sum_on(numbers, 8))
 
 # FIND MINIMUM SUM SUBARRAY OF SIZE K
 # Input: arr = [10, 4, 2, 5, 6, 3, 8, 1]
