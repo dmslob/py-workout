@@ -27,3 +27,7 @@ print(listcomp)
 
 mtr = list(zip([1, 2, 3], [4, 5, 6]))
 print(mtr)
+
+# sum of squares
+sum_of_squares = sum(i * i for i in range(10))
+print(sum_of_squares)

@@ -1,9 +1,6 @@
 for element in [1, 2, 3]:
     print(element)
 
-for element in (1, 2, 3):
-    print(element)
-
 for key in {'one': 1, 'two': 2}:
     print(key)
 
@@ -19,7 +16,7 @@ print(it)
 print(next(it))
 print(next(it))
 print(next(it))
-# print(next(it)) error -> StopIteration
+#print(next(it)) #error -> StopIteration
 
 
 class Reverse:
@@ -39,7 +36,9 @@ class Reverse:
 
 
 rev = Reverse('spam')
-print(iter(rev))
+assert list(iter(rev)) == ['m', 'a', 'p', 's']
 
-for char in rev:
-    print(char)
+
+names = ["Alice", "Bob", "Charlie", "Debbie"]
+for i, name in enumerate(names):
+    print(f"name {i} is {name}")

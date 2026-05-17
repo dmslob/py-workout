@@ -2,16 +2,19 @@ def reverse(data):
     for index in range(len(data) - 1, -1, -1):
         yield data[index]
 
+# Test
+# given
+word = 'test'
+expected = ['t', 's', 'e', 't']
 
-for char in reverse('golf'):
-    print(char)
+# when
+w1 = list(reverse(word))
+w2 = list(reversed(word))
+w3 = list(word[i] for i in range(len(word) - 1, -1, -1))
+w4 = list(i for i in reversed(word))
 
-# sum of squares
-sum_of_squares = sum(i * i for i in range(10))
-print(sum_of_squares)
-
-data = 'golf'
-for i in reversed([1, 3]):
-    print(i)
-reversedList = list(data[i] for i in range(len(data) - 1, -1, -1))
-print(reversedList)
+# then
+assert w1 == expected
+assert w2 == expected
+assert w3 == expected
+assert w4 == expected
